@@ -1,0 +1,54 @@
+RAG Chat Assistant - Test Document
+
+This is a sample document to test the RAG Chat Assistant application.
+
+About RAG (Retrieval-Augmented Generation)
+==========================================
+
+RAG is a technique that combines the power of large language models with the ability to retrieve relevant information from a knowledge base. This approach has several advantages:
+
+1. Accuracy: By grounding responses in actual documents, RAG reduces hallucinations and provides more accurate answers.
+
+2. Specificity: RAG can provide detailed answers based on your specific documents rather than general knowledge.
+
+3. Traceability: You can see exactly which parts of your documents were used to generate each answer.
+
+How This Application Works
+=========================
+
+Step 1: Document Upload
+- You upload PDF documents through the web interface
+- The application extracts text from these PDFs
+
+Step 2: Document Processing
+- Text is split into smaller chunks for efficient processing
+- Each chunk is converted into embeddings (numerical representations)
+- Embeddings are stored in a vector database
+
+Step 3: Question Answering
+- When you ask a question, it's converted to an embedding
+- The system finds the most relevant document chunks
+- These chunks are sent to the AI model along with your question
+- The AI generates an answer based on the retrieved information
+
+Test Questions
+=============
+
+After uploading this document, try asking these questions:
+- What is RAG?
+- How does this application work?
+- What are the advantages of using RAG?
+- What happens during document processing?
+
+Technical Details
+================
+
+This application uses:
+- Streamlit for the web interface
+- LangChain for orchestrating the RAG pipeline
+- OpenAI's GPT models for generating answers
+- ChromaDB for vector storage
+- PyPDF for PDF processing
+
+---
+End of test document. Convert this to PDF and upload it to test the application! 
